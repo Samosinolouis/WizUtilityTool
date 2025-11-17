@@ -170,7 +170,7 @@ $leftPanel.Controls.Add($buttonRestartWU)
 # Create output text box
 $textBoxOutput = New-Object System.Windows.Forms.TextBox
 $textBoxOutput.Location = New-Object System.Drawing.Point(200, 10)
-$textBoxOutput.Size = New-Object System.Drawing.Size(680, 545)
+$textBoxOutput.Size = New-Object System.Drawing.Size(680, 525)
 $textBoxOutput.Multiline = $true
 $textBoxOutput.ReadOnly = $true
 $textBoxOutput.ScrollBars = "Vertical"
@@ -183,8 +183,9 @@ $form.Controls.Add($textBoxOutput)
 
 # Create footer label
 $labelFooter = New-Object System.Windows.Forms.Label
-$labelFooter.Location = New-Object System.Drawing.Point(200, 565)
-$labelFooter.Size = New-Object System.Drawing.Size(680, 20)
+$labelFooter.Location = New-Object System.Drawing.Point(200, 540)
+$labelFooter.Size = New-Object System.Drawing.Size(680, 25)
+$labelFooter.Text = "Made by Louis Samosino"
 $labelFooter.ForeColor = [System.Drawing.Color]::FromArgb(120, 120, 120)
 $labelFooter.Font = New-Object System.Drawing.Font("Segoe UI", 8, [System.Drawing.FontStyle]::Italic)
 $labelFooter.TextAlign = [System.Drawing.ContentAlignment]::MiddleCenter
